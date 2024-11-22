@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Add()
+        {
+            var First=document.getElementById("FirstNum").value;
+            var Second=document.getElementById("SecondNum").value;
+            First=parseInt(First);
+            Second=parseInt(Second);
+            var result=document.getElementById("result");
+            result.innerHTML=First+Second;
+        }
+        function sub()
+        {
+            var First=document.getElementById("FirstNum").value;
+            var Second=document.getElementById("SecondNum").value;
+            First=parseInt(First);
+            Second=parseInt(Second);
+            var result=document.getElementById("result");
+            result.innerHTML=First-Second;
+        }
+        function mul()
+        {
+            var First=document.getElementById("FirstNum").value;
+            var Second=document.getElementById("SecondNum").value;
+            First=parseInt(First);
+            Second=parseInt(Second);
+            var result=document.getElementById("result");
+            result.innerHTML=First*Second;
+        }
+        function div()
+        {
+            var First=document.getElementById("FirstNum").value;
+            var Second=document.getElementById("SecondNum").value;
+            First=parseInt(First);
+            Second=parseInt(Second);
+            var result=document.getElementById("result");
+            result.innerHTML=First/Second;
+        }
+        function mod()
+        {
+            var First=document.getElementById("FirstNum").value;
+            var Second=document.getElementById("SecondNum").value;
+            First=parseInt(First);
+            Second=parseInt(Second);
+            var result=document.getElementById("result");
+            result.innerHTML=First%Second;
+        }
+    </script>
+
+    <style>
+        button:hover
+        {
+           cursor:pointer;
+           
+
+        }
+        button{
+            margin: 2px;
+           background-color: rgb(127, 170, 255);
+           color: rgb(165, 42, 42);
+           height:30px;
+        }
+        h1{
+            color:red;
+            text-decoration: underline;
+        }
+        #result{
+            height:40px;
+            width:80px;
+            border:1px solid black;
+            padding: 5px;
+            
+        }
+        #main{
+            height:400px;
+            width:500px;
+            border: 5px solid;
+            border-radius: 10px;
+            margin-left: 500px;
+            margin-top: 120px;
+            background-color: bisque;
+            
+        }
+        #result{
+            margin-bottom: 20px;
+            background-color: aquamarine;
+        }
+        body
+        {
+            background-image: url('img/w.avif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;       
+        }
+
+      #h{
+        color: #000000;
+        
+      }
+        
+    </style>
+</head>
+<body>
+
+  <h1 id="h" align="center">Hello   ,  let's Calculate &nbsp  :) </h1>
+
+    <div id="main" align="center">
+
+        <h1>Calculator</h1>
+    
+        <input type="tel" id="FirstNum" placeholder="Enter Number"><br><br>
+        <input type="tel" id="SecondNum" placeholder="Enter Number"><br><br>
+        <button onclick="Add()">Addition +</button>
+        <button onclick="sub()">Substraction -</button>
+        <button onclick="mul()">Multiplication *</button>
+        <button onclick="div()">Division /</button>
+        <button onclick="mod()">ModuloDiv %</button>
+        
+        <h2 id="result">
+
+        </h2>
+
+    </div>
+
+</body>
+</html>
